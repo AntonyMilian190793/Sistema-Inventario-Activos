@@ -77,6 +77,12 @@
     <Compile Include="Formularios\frmArticulos.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Formularios\frmCargoActivos.Designer.vb">
+      <DependentUpon>frmCargoActivos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmCargoActivos.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Formularios\frmConfiguracion.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +151,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Formularios\frmArticulos.resx">
       <DependentUpon>frmArticulos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmCargoActivos.resx">
+      <DependentUpon>frmCargoActivos.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmConfiguracion.resx">
       <DependentUpon>frmConfiguracion.vb</DependentUpon>
