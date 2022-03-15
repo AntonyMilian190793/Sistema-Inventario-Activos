@@ -25,7 +25,7 @@ Partial Class frmCargoActivos
         Me.DTPFechaEntrega = New System.Windows.Forms.DateTimePicker()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.txtIdentidad = New System.Windows.Forms.TextBox()
-        Me.btn = New System.Windows.Forms.Button()
+        Me.btnArticulos = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.rbMarca = New System.Windows.Forms.RadioButton()
         Me.rbCodigoA = New System.Windows.Forms.RadioButton()
@@ -54,8 +54,8 @@ Partial Class frmCargoActivos
         Me.cboEstado = New System.Windows.Forms.ComboBox()
         Me.txtPrecio = New System.Windows.Forms.TextBox()
         Me.txtDescripcion = New System.Windows.Forms.TextBox()
-        Me.txtCodigoA = New System.Windows.Forms.TextBox()
         Me.txtCodigo = New System.Windows.Forms.TextBox()
+        Me.txtCodigoInventario = New System.Windows.Forms.TextBox()
         Me.txtNombreA = New System.Windows.Forms.TextBox()
         Me.txtIdEmpleado = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
@@ -71,7 +71,7 @@ Partial Class frmCargoActivos
         Me.Label13 = New System.Windows.Forms.Label()
         Me.txtId = New System.Windows.Forms.TextBox()
         Me.txtIdArticulo = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnEmpleados = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         CType(Me.dgvArticulos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -100,15 +100,15 @@ Partial Class frmCargoActivos
         Me.txtIdentidad.Size = New System.Drawing.Size(132, 22)
         Me.txtIdentidad.TabIndex = 81
         '
-        'btn
+        'btnArticulos
         '
-        Me.btn.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn.Location = New System.Drawing.Point(253, 30)
-        Me.btn.Name = "btn"
-        Me.btn.Size = New System.Drawing.Size(62, 26)
-        Me.btn.TabIndex = 80
-        Me.btn.Text = "..."
-        Me.btn.UseVisualStyleBackColor = True
+        Me.btnArticulos.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnArticulos.Location = New System.Drawing.Point(253, 25)
+        Me.btnArticulos.Name = "btnArticulos"
+        Me.btnArticulos.Size = New System.Drawing.Size(62, 31)
+        Me.btnArticulos.TabIndex = 80
+        Me.btnArticulos.Text = "..."
+        Me.btnArticulos.UseVisualStyleBackColor = True
         '
         'Panel1
         '
@@ -369,19 +369,19 @@ Partial Class frmCargoActivos
         Me.txtDescripcion.Size = New System.Drawing.Size(835, 79)
         Me.txtDescripcion.TabIndex = 70
         '
-        'txtCodigoA
-        '
-        Me.txtCodigoA.Location = New System.Drawing.Point(115, 31)
-        Me.txtCodigoA.Name = "txtCodigoA"
-        Me.txtCodigoA.Size = New System.Drawing.Size(132, 22)
-        Me.txtCodigoA.TabIndex = 69
-        '
         'txtCodigo
         '
-        Me.txtCodigo.Location = New System.Drawing.Point(115, 116)
+        Me.txtCodigo.Location = New System.Drawing.Point(115, 31)
         Me.txtCodigo.Name = "txtCodigo"
         Me.txtCodigo.Size = New System.Drawing.Size(132, 22)
-        Me.txtCodigo.TabIndex = 68
+        Me.txtCodigo.TabIndex = 69
+        '
+        'txtCodigoInventario
+        '
+        Me.txtCodigoInventario.Location = New System.Drawing.Point(115, 116)
+        Me.txtCodigoInventario.Name = "txtCodigoInventario"
+        Me.txtCodigoInventario.Size = New System.Drawing.Size(132, 22)
+        Me.txtCodigoInventario.TabIndex = 68
         '
         'txtNombreA
         '
@@ -510,22 +510,22 @@ Partial Class frmCargoActivos
         Me.txtIdArticulo.Size = New System.Drawing.Size(43, 22)
         Me.txtIdArticulo.TabIndex = 91
         '
-        'Button1
+        'btnEmpleados
         '
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(253, 70)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(62, 26)
-        Me.Button1.TabIndex = 92
-        Me.Button1.Text = "..."
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnEmpleados.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEmpleados.Location = New System.Drawing.Point(253, 65)
+        Me.btnEmpleados.Name = "btnEmpleados"
+        Me.btnEmpleados.Size = New System.Drawing.Size(62, 31)
+        Me.btnEmpleados.TabIndex = 92
+        Me.btnEmpleados.Text = "..."
+        Me.btnEmpleados.UseVisualStyleBackColor = True
         '
         'frmCargoActivos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1228, 645)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnEmpleados)
         Me.Controls.Add(Me.txtIdArticulo)
         Me.Controls.Add(Me.txtId)
         Me.Controls.Add(Me.Label13)
@@ -535,7 +535,7 @@ Partial Class frmCargoActivos
         Me.Controls.Add(Me.DTPFechaEntrega)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.txtIdentidad)
-        Me.Controls.Add(Me.btn)
+        Me.Controls.Add(Me.btnArticulos)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.btnBuscar)
         Me.Controls.Add(Me.btnCancelar)
@@ -546,8 +546,8 @@ Partial Class frmCargoActivos
         Me.Controls.Add(Me.cboEstado)
         Me.Controls.Add(Me.txtPrecio)
         Me.Controls.Add(Me.txtDescripcion)
-        Me.Controls.Add(Me.txtCodigoA)
         Me.Controls.Add(Me.txtCodigo)
+        Me.Controls.Add(Me.txtCodigoInventario)
         Me.Controls.Add(Me.txtNombreA)
         Me.Controls.Add(Me.txtIdEmpleado)
         Me.Controls.Add(Me.Label8)
@@ -569,7 +569,7 @@ Partial Class frmCargoActivos
     Friend WithEvents DTPFechaEntrega As System.Windows.Forms.DateTimePicker
     Friend WithEvents Label11 As System.Windows.Forms.Label
     Friend WithEvents txtIdentidad As System.Windows.Forms.TextBox
-    Friend WithEvents btn As System.Windows.Forms.Button
+    Friend WithEvents btnArticulos As System.Windows.Forms.Button
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents rbMarca As System.Windows.Forms.RadioButton
     Friend WithEvents rbCodigoA As System.Windows.Forms.RadioButton
@@ -598,8 +598,8 @@ Partial Class frmCargoActivos
     Friend WithEvents cboEstado As System.Windows.Forms.ComboBox
     Friend WithEvents txtPrecio As System.Windows.Forms.TextBox
     Friend WithEvents txtDescripcion As System.Windows.Forms.TextBox
-    Friend WithEvents txtCodigoA As System.Windows.Forms.TextBox
     Friend WithEvents txtCodigo As System.Windows.Forms.TextBox
+    Friend WithEvents txtCodigoInventario As System.Windows.Forms.TextBox
     Friend WithEvents txtNombreA As System.Windows.Forms.TextBox
     Friend WithEvents txtIdEmpleado As System.Windows.Forms.TextBox
     Friend WithEvents Label8 As System.Windows.Forms.Label
@@ -615,5 +615,5 @@ Partial Class frmCargoActivos
     Friend WithEvents Label13 As System.Windows.Forms.Label
     Friend WithEvents txtId As System.Windows.Forms.TextBox
     Friend WithEvents txtIdArticulo As System.Windows.Forms.TextBox
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents btnEmpleados As System.Windows.Forms.Button
 End Class
