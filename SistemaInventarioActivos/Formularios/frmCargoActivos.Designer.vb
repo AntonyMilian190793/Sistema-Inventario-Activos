@@ -81,7 +81,7 @@ Partial Class frmCargoActivos
         Me.DTPFechaEntrega.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.DTPFechaEntrega.Location = New System.Drawing.Point(476, 114)
         Me.DTPFechaEntrega.Name = "DTPFechaEntrega"
-        Me.DTPFechaEntrega.Size = New System.Drawing.Size(235, 22)
+        Me.DTPFechaEntrega.Size = New System.Drawing.Size(206, 22)
         Me.DTPFechaEntrega.TabIndex = 83
         '
         'Label11
@@ -349,16 +349,17 @@ Partial Class frmCargoActivos
         Me.cboEstado.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
         Me.cboEstado.FormattingEnabled = True
         Me.cboEstado.Items.AddRange(New Object() {"Nuevo", "Usado"})
-        Me.cboEstado.Location = New System.Drawing.Point(826, 116)
+        Me.cboEstado.Location = New System.Drawing.Point(800, 116)
         Me.cboEstado.Name = "cboEstado"
-        Me.cboEstado.Size = New System.Drawing.Size(124, 24)
+        Me.cboEstado.Size = New System.Drawing.Size(177, 24)
         Me.cboEstado.TabIndex = 72
         '
         'txtPrecio
         '
-        Me.txtPrecio.Location = New System.Drawing.Point(826, 39)
+        Me.txtPrecio.Location = New System.Drawing.Point(800, 39)
         Me.txtPrecio.Name = "txtPrecio"
-        Me.txtPrecio.Size = New System.Drawing.Size(124, 22)
+        Me.txtPrecio.ReadOnly = True
+        Me.txtPrecio.Size = New System.Drawing.Size(177, 22)
         Me.txtPrecio.TabIndex = 71
         '
         'txtDescripcion
@@ -387,21 +388,21 @@ Partial Class frmCargoActivos
         '
         Me.txtNombreA.Location = New System.Drawing.Point(476, 37)
         Me.txtNombreA.Name = "txtNombreA"
-        Me.txtNombreA.Size = New System.Drawing.Size(235, 22)
+        Me.txtNombreA.ReadOnly = True
+        Me.txtNombreA.Size = New System.Drawing.Size(206, 22)
         Me.txtNombreA.TabIndex = 67
         '
         'txtIdEmpleado
         '
-        Me.txtIdEmpleado.Location = New System.Drawing.Point(946, 74)
+        Me.txtIdEmpleado.Location = New System.Drawing.Point(983, 74)
         Me.txtIdEmpleado.Name = "txtIdEmpleado"
-        Me.txtIdEmpleado.Size = New System.Drawing.Size(43, 22)
+        Me.txtIdEmpleado.Size = New System.Drawing.Size(28, 22)
         Me.txtIdEmpleado.TabIndex = 66
-        Me.txtIdEmpleado.Visible = False
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(737, 116)
+        Me.Label8.Location = New System.Drawing.Point(698, 110)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(79, 34)
         Me.Label8.TabIndex = 65
@@ -411,7 +412,7 @@ Partial Class frmCargoActivos
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(737, 42)
+        Me.Label6.Location = New System.Drawing.Point(698, 42)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(48, 17)
         Me.Label6.TabIndex = 64
@@ -477,20 +478,22 @@ Partial Class frmCargoActivos
         '
         Me.txtNombreE.Location = New System.Drawing.Point(476, 74)
         Me.txtNombreE.Name = "txtNombreE"
-        Me.txtNombreE.Size = New System.Drawing.Size(235, 22)
+        Me.txtNombreE.ReadOnly = True
+        Me.txtNombreE.Size = New System.Drawing.Size(206, 22)
         Me.txtNombreE.TabIndex = 86
         '
         'txtDepartamento
         '
-        Me.txtDepartamento.Location = New System.Drawing.Point(826, 74)
+        Me.txtDepartamento.Location = New System.Drawing.Point(802, 74)
         Me.txtDepartamento.Name = "txtDepartamento"
-        Me.txtDepartamento.Size = New System.Drawing.Size(124, 22)
+        Me.txtDepartamento.ReadOnly = True
+        Me.txtDepartamento.Size = New System.Drawing.Size(175, 22)
         Me.txtDepartamento.TabIndex = 88
         '
         'Label13
         '
         Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(722, 79)
+        Me.Label13.Location = New System.Drawing.Point(698, 74)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(98, 17)
         Me.Label13.TabIndex = 89
@@ -498,16 +501,16 @@ Partial Class frmCargoActivos
         '
         'txtId
         '
-        Me.txtId.Location = New System.Drawing.Point(946, 118)
+        Me.txtId.Location = New System.Drawing.Point(983, 116)
         Me.txtId.Name = "txtId"
-        Me.txtId.Size = New System.Drawing.Size(43, 22)
+        Me.txtId.Size = New System.Drawing.Size(28, 22)
         Me.txtId.TabIndex = 90
         '
         'txtIdArticulo
         '
-        Me.txtIdArticulo.Location = New System.Drawing.Point(946, 40)
+        Me.txtIdArticulo.Location = New System.Drawing.Point(983, 39)
         Me.txtIdArticulo.Name = "txtIdArticulo"
-        Me.txtIdArticulo.Size = New System.Drawing.Size(43, 22)
+        Me.txtIdArticulo.Size = New System.Drawing.Size(28, 22)
         Me.txtIdArticulo.TabIndex = 91
         '
         'btnEmpleados
@@ -558,7 +561,7 @@ Partial Class frmCargoActivos
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "frmCargoActivos"
-        Me.Text = "Asignació de Activos a Empleados"
+        Me.Text = "Asignación de Activos a Empleados"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.dgvArticulos, System.ComponentModel.ISupportInitialize).EndInit()
