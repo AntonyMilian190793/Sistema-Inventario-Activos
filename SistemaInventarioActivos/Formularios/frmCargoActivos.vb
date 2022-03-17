@@ -215,4 +215,12 @@ Public Class frmCargoActivos
         DesactivarControles()
         LimpiarControles()
     End Sub
+
+    Private Sub btnArticulos_Click(sender As Object, e As EventArgs) Handles btnArticulos.Click
+        frmBusquedaArticulos.ShowDialog()
+    End Sub
+
+    Private Sub btnEmpleados_Click(sender As Object, e As EventArgs) Handles btnEmpleados.Click
+        frmBusquedaEmpleados.ShowDialog()
+    End Sub
 End Class

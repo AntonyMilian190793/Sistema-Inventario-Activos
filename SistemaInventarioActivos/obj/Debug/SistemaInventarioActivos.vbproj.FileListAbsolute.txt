@@ -17,3 +17,5 @@ C:\Users\xxJAM\OneDrive\Escritorio\Activos Sistema\SistemaInventarioActivos\Sist
 C:\Users\xxJAM\OneDrive\Escritorio\Activos Sistema\SistemaInventarioActivos\SistemaInventarioActivos\obj\Debug\SistemaInventarioActivos.frmMarcas.resources
 C:\Users\xxJAM\OneDrive\Escritorio\Activos Sistema\SistemaInventarioActivos\SistemaInventarioActivos\obj\Debug\SistemaInventarioActivos.frmArticulos.resources
 C:\Users\xxJAM\OneDrive\Escritorio\Activos Sistema\SistemaInventarioActivos\SistemaInventarioActivos\obj\Debug\SistemaInventarioActivos.frmCargoActivos.resources
+C:\Users\xxJAM\OneDrive\Escritorio\Activos Sistema\SistemaInventarioActivos\SistemaInventarioActivos\obj\Debug\SistemaInventarioActivos.frmBusquedaArticulos.resources
+C:\Users\xxJAM\OneDrive\Escritorio\Activos Sistema\SistemaInventarioActivos\SistemaInventarioActivos\obj\Debug\SistemaInventarioActivos.frmBusquedaEmpleados.resources

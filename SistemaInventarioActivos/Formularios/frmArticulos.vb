@@ -111,7 +111,7 @@ Public Class frmArticulos
 
     Sub LlenarDatos()
         Dim sql As String
-        sql = "SELECT Articulos.IdArticulo, Articulos.NombreA, Articulos.NumeroSerie, Articulos.CodigoA, Marcas.NombreM, Articulos.Modelo, Articulos.PrecioCompra, Articulos.FechaCompra, Articulos.EstadoArticulo, Articulos.Descripcion FROM Articulos INNER JOIN Marcas ON Articulos.IdMarca = Marcas.IdMarca"
+        sql = "SELECT Articulos.IdArticulo, Articulos.NombreA, Articulos.NumeroSerie, Articulos.CodigoA, Marcas.NombreM, Articulos.Modelo, Articulos.PrecioCompra, Articulos.FechaCompra, Articulos.EstadoArticulo, Articulos.Descripcion FROM Articulos INNER JOIN Marcas ON Articulos.IdMarca = Marcas.IdMarca WHERE Articulos.EstadoArticulo = 'PENDIENTE'"
 
         Try
             Dim tabla As New DataTable
@@ -131,7 +131,7 @@ Public Class frmArticulos
             If txtBuscar.Text = "" Then
                 LlenarDatos()
             End If
-            adaptador = New SqlDataAdapter("SELECT Articulos.NombreA, Articulos.NumeroSerie, Articulos.CodigoA, Marcas.NombreM, Articulos.Modelo, Articulos.PrecioCompra, Articulos.FechaCompra, Articulos.EstadoArticulo, Articulos.Descripcion FROM Articulos INNER JOIN Marcas ON Articulos.IdMarca = Marcas.IdMarca WHERE Articulos.NombreA LIKE '%" & txtBuscar.Text & "%'", obtenerconexion)
+            adaptador = New SqlDataAdapter("SELECT Articulos.NombreA, Articulos.NumeroSerie, Articulos.CodigoA, Marcas.NombreM, Articulos.Modelo, Articulos.PrecioCompra, Articulos.FechaCompra, Articulos.EstadoArticulo, Articulos.Descripcion FROM Articulos INNER JOIN Marcas ON Articulos.IdMarca = Marcas.IdMarca WHERE Articulos.NombreA LIKE '%" & txtBuscar.Text & "%' AND Articulos.EstadoArticulo = 'PENDIENTE'", obtenerconexion)
 
             tabla.Clear()
             adaptador.Fill(tabla)
@@ -147,7 +147,7 @@ Public Class frmArticulos
             If txtBuscar.Text = "" Then
                 LlenarDatos()
             End If
-            adaptador = New SqlDataAdapter("SELECT Articulos.NombreA, Articulos.NumeroSerie, Articulos.CodigoA, Marcas.NombreM, Articulos.Modelo, Articulos.PrecioCompra, Articulos.FechaCompra, Articulos.EstadoArticulo, Articulos.Descripcion FROM Articulos INNER JOIN Marcas ON Articulos.IdMarca = Marcas.IdMarca WHERE Articulos.CodigoA LIKE '%" & txtBuscar.Text & "%'", obtenerconexion)
+            adaptador = New SqlDataAdapter("SELECT Articulos.NombreA, Articulos.NumeroSerie, Articulos.CodigoA, Marcas.NombreM, Articulos.Modelo, Articulos.PrecioCompra, Articulos.FechaCompra, Articulos.EstadoArticulo, Articulos.Descripcion FROM Articulos INNER JOIN Marcas ON Articulos.IdMarca = Marcas.IdMarca WHERE Articulos.CodigoA LIKE '%" & txtBuscar.Text & "%' AND Articulos.EstadoArticulo = 'PENDIENTE'", obtenerconexion)
             tabla.Clear()
             adaptador.Fill(tabla)
 
@@ -162,7 +162,7 @@ Public Class frmArticulos
             If txtBuscar.Text = "" Then
                 LlenarDatos()
             End If
-            adaptador = New SqlDataAdapter("SELECT Articulos.NombreA, Articulos.NumeroSerie, Articulos.CodigoA, Marcas.NombreM, Articulos.Modelo, Articulos.PrecioCompra, Articulos.FechaCompra, Articulos.EstadoArticulo, Articulos.Descripcion FROM Articulos INNER JOIN Marcas ON Articulos.IdMarca = Marcas.IdMarca WHERE Marcas.NombreM LIKE '%" & txtBuscar.Text & "%'", obtenerconexion)
+            adaptador = New SqlDataAdapter("SELECT Articulos.NombreA, Articulos.NumeroSerie, Articulos.CodigoA, Marcas.NombreM, Articulos.Modelo, Articulos.PrecioCompra, Articulos.FechaCompra, Articulos.EstadoArticulo, Articulos.Descripcion FROM Articulos INNER JOIN Marcas ON Articulos.IdMarca = Marcas.IdMarca WHERE Marcas.NombreM LIKE '%" & txtBuscar.Text & "%' AND Articulos.EstadoArticulo = 'PENDIENTE'|", obtenerconexion)
             tabla.Clear()
             adaptador.Fill(tabla)
 

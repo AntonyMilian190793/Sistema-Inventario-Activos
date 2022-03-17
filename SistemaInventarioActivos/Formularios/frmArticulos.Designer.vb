@@ -32,6 +32,16 @@ Partial Class frmArticulos
         Me.Label10 = New System.Windows.Forms.Label()
         Me.txtBuscar = New System.Windows.Forms.TextBox()
         Me.dgvArticulos = New System.Windows.Forms.DataGridView()
+        Me.IdArticulo = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NombreA = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NumeroSerie = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.CodigoA = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NombreM = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Modelo = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PrecioCompra = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.EstadoArticulo = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.FechaCompra = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Descripcion = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.btnBuscar = New System.Windows.Forms.Button()
         Me.btnCancelar = New System.Windows.Forms.Button()
         Me.btnEliminar = New System.Windows.Forms.Button()
@@ -55,16 +65,6 @@ Partial Class frmArticulos
         Me.txtPrecio = New System.Windows.Forms.TextBox()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.DTPFechaCompra = New System.Windows.Forms.DateTimePicker()
-        Me.IdArticulo = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NombreA = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NumeroSerie = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.CodigoA = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NombreM = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Modelo = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.PrecioCompra = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.EstadoArticulo = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.FechaCompra = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Descripcion = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Panel1.SuspendLayout()
         CType(Me.dgvArticulos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -177,6 +177,86 @@ Partial Class frmArticulos
         Me.dgvArticulos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgvArticulos.Size = New System.Drawing.Size(1081, 212)
         Me.dgvArticulos.TabIndex = 0
+        '
+        'IdArticulo
+        '
+        Me.IdArticulo.DataPropertyName = "IdArticulo"
+        Me.IdArticulo.HeaderText = "ID"
+        Me.IdArticulo.Name = "IdArticulo"
+        Me.IdArticulo.ReadOnly = True
+        Me.IdArticulo.Visible = False
+        Me.IdArticulo.Width = 5
+        '
+        'NombreA
+        '
+        Me.NombreA.DataPropertyName = "NombreA"
+        Me.NombreA.HeaderText = "NOMBRE DEL ACTIVO"
+        Me.NombreA.Name = "NombreA"
+        Me.NombreA.ReadOnly = True
+        Me.NombreA.Width = 150
+        '
+        'NumeroSerie
+        '
+        Me.NumeroSerie.DataPropertyName = "NumeroSerie"
+        Me.NumeroSerie.HeaderText = "NUMERO DE SERIE"
+        Me.NumeroSerie.Name = "NumeroSerie"
+        Me.NumeroSerie.ReadOnly = True
+        Me.NumeroSerie.Width = 150
+        '
+        'CodigoA
+        '
+        Me.CodigoA.DataPropertyName = "CodigoA"
+        Me.CodigoA.HeaderText = "CODIGO"
+        Me.CodigoA.Name = "CodigoA"
+        Me.CodigoA.ReadOnly = True
+        Me.CodigoA.Width = 60
+        '
+        'NombreM
+        '
+        Me.NombreM.DataPropertyName = "NombreM"
+        Me.NombreM.HeaderText = "MARCA"
+        Me.NombreM.Name = "NombreM"
+        Me.NombreM.ReadOnly = True
+        Me.NombreM.Width = 80
+        '
+        'Modelo
+        '
+        Me.Modelo.DataPropertyName = "Modelo"
+        Me.Modelo.HeaderText = "MODELO"
+        Me.Modelo.Name = "Modelo"
+        Me.Modelo.ReadOnly = True
+        Me.Modelo.Width = 70
+        '
+        'PrecioCompra
+        '
+        Me.PrecioCompra.DataPropertyName = "PrecioCompra"
+        Me.PrecioCompra.HeaderText = "PRECIO DE COMPRA"
+        Me.PrecioCompra.Name = "PrecioCompra"
+        Me.PrecioCompra.ReadOnly = True
+        '
+        'EstadoArticulo
+        '
+        Me.EstadoArticulo.DataPropertyName = "EstadoArticulo"
+        Me.EstadoArticulo.HeaderText = "ESTADO"
+        Me.EstadoArticulo.Name = "EstadoArticulo"
+        Me.EstadoArticulo.ReadOnly = True
+        Me.EstadoArticulo.Visible = False
+        Me.EstadoArticulo.Width = 120
+        '
+        'FechaCompra
+        '
+        Me.FechaCompra.DataPropertyName = "FechaCompra"
+        Me.FechaCompra.HeaderText = "FECHA DE COMPRA"
+        Me.FechaCompra.Name = "FechaCompra"
+        Me.FechaCompra.ReadOnly = True
+        '
+        'Descripcion
+        '
+        Me.Descripcion.DataPropertyName = "Descripcion"
+        Me.Descripcion.HeaderText = "DESCRIPCION"
+        Me.Descripcion.Name = "Descripcion"
+        Me.Descripcion.ReadOnly = True
+        Me.Descripcion.Width = 95
         '
         'btnBuscar
         '
@@ -372,86 +452,6 @@ Partial Class frmArticulos
         Me.DTPFechaCompra.Name = "DTPFechaCompra"
         Me.DTPFechaCompra.Size = New System.Drawing.Size(177, 22)
         Me.DTPFechaCompra.TabIndex = 58
-        '
-        'IdArticulo
-        '
-        Me.IdArticulo.DataPropertyName = "IdArticulo"
-        Me.IdArticulo.HeaderText = "ID"
-        Me.IdArticulo.Name = "IdArticulo"
-        Me.IdArticulo.ReadOnly = True
-        Me.IdArticulo.Visible = False
-        Me.IdArticulo.Width = 5
-        '
-        'NombreA
-        '
-        Me.NombreA.DataPropertyName = "NombreA"
-        Me.NombreA.HeaderText = "NOMBRE DEL ACTIVO"
-        Me.NombreA.Name = "NombreA"
-        Me.NombreA.ReadOnly = True
-        Me.NombreA.Width = 150
-        '
-        'NumeroSerie
-        '
-        Me.NumeroSerie.DataPropertyName = "NumeroSerie"
-        Me.NumeroSerie.HeaderText = "NUMERO DE SERIE"
-        Me.NumeroSerie.Name = "NumeroSerie"
-        Me.NumeroSerie.ReadOnly = True
-        Me.NumeroSerie.Width = 150
-        '
-        'CodigoA
-        '
-        Me.CodigoA.DataPropertyName = "CodigoA"
-        Me.CodigoA.HeaderText = "CODIGO"
-        Me.CodigoA.Name = "CodigoA"
-        Me.CodigoA.ReadOnly = True
-        Me.CodigoA.Width = 60
-        '
-        'NombreM
-        '
-        Me.NombreM.DataPropertyName = "NombreM"
-        Me.NombreM.HeaderText = "MARCA"
-        Me.NombreM.Name = "NombreM"
-        Me.NombreM.ReadOnly = True
-        Me.NombreM.Width = 80
-        '
-        'Modelo
-        '
-        Me.Modelo.DataPropertyName = "Modelo"
-        Me.Modelo.HeaderText = "MODELO"
-        Me.Modelo.Name = "Modelo"
-        Me.Modelo.ReadOnly = True
-        Me.Modelo.Width = 70
-        '
-        'PrecioCompra
-        '
-        Me.PrecioCompra.DataPropertyName = "PrecioCompra"
-        Me.PrecioCompra.HeaderText = "PRECIO DE COMPRA"
-        Me.PrecioCompra.Name = "PrecioCompra"
-        Me.PrecioCompra.ReadOnly = True
-        '
-        'EstadoArticulo
-        '
-        Me.EstadoArticulo.DataPropertyName = "EstadoArticulo"
-        Me.EstadoArticulo.HeaderText = "ESTADO"
-        Me.EstadoArticulo.Name = "EstadoArticulo"
-        Me.EstadoArticulo.ReadOnly = True
-        Me.EstadoArticulo.Visible = False
-        Me.EstadoArticulo.Width = 120
-        '
-        'FechaCompra
-        '
-        Me.FechaCompra.DataPropertyName = "FechaCompra"
-        Me.FechaCompra.HeaderText = "FECHA DE COMPRA"
-        Me.FechaCompra.Name = "FechaCompra"
-        Me.FechaCompra.ReadOnly = True
-        '
-        'Descripcion
-        '
-        Me.Descripcion.DataPropertyName = "Descripcion"
-        Me.Descripcion.HeaderText = "DESCRIPCION"
-        Me.Descripcion.Name = "Descripcion"
-        Me.Descripcion.ReadOnly = True
-        Me.Descripcion.Width = 95
         '
         'frmArticulos
         '
